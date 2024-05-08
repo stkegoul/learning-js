@@ -429,4 +429,14 @@
 
     }
 
-    integerManipulation(73,72)
+// 29 - Check whether three given integer values are in the range 50..99 (inclusive). Return true if one or more of them are in the specified range.  
+
+    const integerManipulation2 = (a, b, c) => {
+
+        if ((a >= 50 && a <=99) || (b >= 50 && b <=99) || (c >= 50 && c <=99)) {
+            console.log("true")
+        } else {
+            console.log("false")
+        }
+
+    }
