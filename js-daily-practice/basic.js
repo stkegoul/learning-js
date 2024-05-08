@@ -417,4 +417,16 @@
         }
     }
 
-    stringManipulation6("Python")
+// 28 - Check whether two given integer values are in the range 50..99 (inclusive). Return true if either of them falls within the range.  
+
+    const integerManipulation = (a, b) => {
+
+        if ((a >= 50 && a <=99) || (b >= 50 && b <=99)) {
+            console.log("true")
+        } else {
+            console.log("false")
+        }
+
+    }
+
+    integerManipulation(73,72)
