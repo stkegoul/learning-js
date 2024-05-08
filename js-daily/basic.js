@@ -502,13 +502,21 @@
 
 // 34 - Find the largest number from the two given positive integers. The two numbers are in the range 40..60 inclusive.
 
-const integerManipulation6 = (n, m) => {
+    const integerManipulation6 = (n, m) => {
 
-    if ((n >= 40 && n <=60) && (m >= 40 && m <= 60)) {
-        console.log(Math.max(n, m))
-    } else {
-        console.log("false")
+        if ((n >= 40 && n <=60) && (m >= 40 && m <= 60)) {
+            console.log(Math.max(n, m))
+        } else {
+            console.log("false")
+        }
     }
-}
 
-integerManipulation6(40,50)
+// 35 - Check whether a specified character exists between the 2nd and 4th positions in a given string.
+
+    const stringManipulation8 = (str, char) => {
+        if (str.charAt(1) === char || str.charAt(2) === char || str.charAt(3) === char) {
+            console.log("true")
+        } else {
+            console.log("false")
+        }
+    }
