@@ -394,3 +394,16 @@
             console.log(`${n} is not a multiple of 3 or 7`)
         }
     }
+
+// 26 - Create a string from a given string. This is done by taking the last 3 characters and adding them at both the front and back. The string length must be 3 or more.
+
+    const stringManipulation5 = (str) => {
+        if (str.length >= 3) {
+            const lastThreeChar = str.slice(str.length - 3)
+            console.log(lastThreeChar + str + lastThreeChar)
+        } else {
+            console.log(`String must be more than 3 characters`)
+        }
+    }
+
+    stringManipulation5("Almighty")
