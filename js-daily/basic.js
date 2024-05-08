@@ -500,4 +500,15 @@
 
     }
 
-    integerManipulation5(45,60)
+// 34 - Find the largest number from the two given positive integers. The two numbers are in the range 40..60 inclusive.
+
+const integerManipulation6 = (n, m) => {
+
+    if ((n >= 40 && n <=60) && (m >= 40 && m <= 60)) {
+        console.log(Math.max(n, m))
+    } else {
+        console.log("false")
+    }
+}
+
+integerManipulation6(40,50)
