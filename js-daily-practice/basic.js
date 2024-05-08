@@ -406,4 +406,15 @@
         }
     }
 
-    stringManipulation5("Almighty")
+// 27 - Check whether a string starts with 'Java' if it does not otherwise.  
+
+    const stringManipulation6 = (str) => {
+
+        if (str.slice(0,4) === "Java") {
+            console.log("true")
+        } else {
+            console.log("false")
+        }
+    }
+
+    stringManipulation6("Python")
