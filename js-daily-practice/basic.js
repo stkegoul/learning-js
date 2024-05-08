@@ -343,4 +343,54 @@
         }
     }
 
-    checkOperator(0,20)
+// 21 - Create another string by adding "Py" in front of a given string. If the given string begins with "Py" return the original string.  
+
+    const stringManipulation = (str) => {
+        if (str.slice(0,2) === "Py") {
+            console.log(str)
+        } else {
+            str = "Py" + str
+            console.log(str)
+        }
+    }
+
+// 22 - Remove a character at the specified position in a given string and return the modified string.
+
+    const stringManipulation2 = (str, n) => {
+        if (n === 0) {
+            let string = str.slice(n + 1)
+            console.log(string)
+        } else if (n === str.length) {
+            let string = str.slice(0, n - 1)
+            console.log(string)
+        } else {
+            let string = str.slice(0, n - 1) + str.slice(n)
+            console.log(string)
+        }
+    }
+
+// 23 - Create a new string from a given string by changing the position of the first and last characters. The string length must be broader than or equal to 1.
+
+    const stringManipulation3 = (str) => {
+        if (str.length >= 1) {
+            console.log(str.substring(str.length - 1) + str.substring(1, str.length - 1) + str.substring(0,1))
+        } else {
+            console.log("Invalid string input")
+        }
+    }
+
+// 24 - Create another string from a given string with the first character of the given string added to the front and back.  
+
+    const stringManipulation4 = (str) => {
+        console.log(str.substring(0,1) + str + str.substring(0,1))
+    }
+
+// 25 - Check whether a given positive number is a multiple of 3 or 7
+
+    const multiplesOf3and7 = (n) => {
+        if (Number.isInteger(n / 3) === true || Number.isInteger(n / 7) === true) {
+            console.log(`${n} is a multiple of 3 or 7`)
+        } else {
+            console.log(`${n} is not a multiple of 3 or 7`)
+        }
+    }
