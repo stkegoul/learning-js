@@ -465,3 +465,27 @@
 
     }
 
+// 32 - Find the closest value to 100 from two numerical values.  
+
+    const absoluteValue = (n) => {
+        if (n < 0) {
+            return (n * -1)
+        } else {
+            return n
+        }
+    }
+
+    const integerManipulation4 = (n, m) => {
+
+        const nValue = absoluteValue(100 - n)
+        const mValue = absoluteValue(100 - m)
+
+        const closestValue = nValue > mValue ? `${m} is the closest number to 100`
+            : nValue < mValue ? `${n} is the closest number to 100`
+            : `Both numbers have the same distance from 100`
+
+        console.log(closestValue)
+
+    }
+
+    integerManipulation4(105, 105)
