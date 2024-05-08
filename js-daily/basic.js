@@ -488,4 +488,16 @@
 
     }
 
-    integerManipulation4(105, 105)
+// 33 - Check whether two numbers are in the range 40..60 or 70..100 inclusive.  
+
+    const integerManipulation5 = (n, m) => {
+
+        if (((n >= 40 && n <=60) && (m >= 40 && m <=60)) || ((n >= 70 && n <=100) && (m >= 70 && m <=100))) {
+            console.log("true")
+        } else {
+            console.log("false")
+        }
+
+    }
+
+    integerManipulation5(45,60)
