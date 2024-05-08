@@ -235,3 +235,112 @@
         const result = parseInt(a) / parseInt(b)
         document.getElementById("result").innerText = result
     })
+
+// 11 - Convert temperatures to and from Celsius, Fahrenheit.  
+// [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]
+// Expected Output :
+// 60°C is 140 °F
+// 45°F is 7.222222222222222°C
+
+    const convertToCelsius = (f) => {
+        const celsius = ((f - 32) / 9) / 5
+        return celsius
+    }
+
+    const convertToFahrenheit = (c) => {
+        const fahrenheit = ((c / 5) * 9) + 32
+        return fahrenheit
+    }
+
+// 12 - Get the website URL (loading page).
+    
+    const windowURL = location.href         // Gets the full URL
+    const baseURL = location.origin         // Gets the base URL
+
+// 13 - Create a variable using a user-defined name.  
+
+    let userName = "Albus"
+    const userNumber = 1234
+    userName = userNumber
+
+// 14 - Get the filename extension.
+
+    const fileName = (name) => {
+        const splitName = name.split(".")
+        const fileExtension = splitName.pop()
+
+        console.log(fileExtension)
+    }
+
+// 15 - Get the difference between a given number and 13, if the number is broader than 13 return double the absolute difference. 
+
+    const difference = (n) => {
+        if (n <= 13) {
+            const minusValue = 13 - n
+            console.log(minusValue)
+        } else {
+            const minusValue = (13 - n) * -2
+            console.log(minusValue)
+        }
+    }
+
+// 16 - Compute the sum of the two given integers. If the two values are the same, then return triple their sum. 
+
+    const sumIntegers = (a,b) => {
+        if (a === b) {
+            const sumValue = 3 * (a + b)
+            console.log(sumValue)
+        } else {
+            const sumValue = a + b
+            console.log(sumValue)
+        }
+    }
+
+// 17 - Compute the absolute difference between a specified number and 19. Returns triple the absolute difference if the specified number is greater than 19.
+
+    const abDifference = (n) => {
+        if (n > 19) {
+            const absoluteDiff = (n - 19) * 3
+            console.log(absoluteDiff)
+        } else {
+            const absoluteDiff = (n - 19) * -1
+            console.log(absoluteDiff)
+        }
+    }
+
+// 18 - Check a pair of numbers and return true if one of the numbers is 50 or if their sum is 50.  
+
+    const pairOfNumbers = (a,b) => {
+        if (a === 50 || a + b === 50) {
+            console.log(true)
+        } else {
+            console.log(false)
+        }
+    }
+
+// 19 - Check whether a given integer is within 20 of 100 or 400.  
+
+    const integerDistance = (n) => {
+        if ((n > 100 - 20 && n < 100 + 20) || (n > 400 - 20 && n < 400 + 20)) {
+            console.log("Integer is within range")
+        } else {
+            console.log("Integer is not within range")
+        }
+    }
+
+// 20 - Check two given integers whether one is positive and another one is negative. 
+
+    const checkOperator = (a, b) => {
+        if (a >= 0) {
+            console.log(`${a} is positive`)
+        } else {
+            console.log(`${a} is negative`)
+        }
+        if (b >= 0) {
+            console.log(`${b} is positive`)
+        } else {
+            console.log(`${b} is negative`)
+        }
+    }
+
+    checkOperator(0,20)
